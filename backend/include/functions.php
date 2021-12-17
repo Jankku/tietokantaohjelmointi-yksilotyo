@@ -16,7 +16,6 @@ function responseAsJson(PDO $connection, string $query, int $fetchMethod, array 
     echo json_encode($prepared->fetchAll($fetchMethod));
 }
 
-
 /**
  * Echoes success or error string depending on query success
  * @param PDO $connection Database connection
@@ -71,4 +70,14 @@ function getConnection(): PDO
     $connection = new PDO("mysql:host=localhost;dbname=imdb", "root", "");
     $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     return $connection;
+}
+
+/**
+ * Creates needed tables, procedures, views and indexes
+ * @param PDO $connection Database connection
+ */
+function initialise(PDO $connection)
+{
+    $sql = file_get_contents('./index.sql');
+    $connection->exec($sql);
 }
