@@ -6,12 +6,12 @@ Käyttää IMDB-datasettiä.
 
 ### Kotisivu
 
-![Kotisivu](./images/home.png)
+![Kotisivu](images/home.png)
 
 ### Elokuvan tiedot
 
-![Elokuvan tiedot](./images/detail.png)
+![Elokuvan tiedot](images/detail.png)
 
 ### Elokuvan nimen muokkaushistoria
 
-![Muokkaushistoria](./images/history.png)
+![Muokkaushistoria](images/history.png)
