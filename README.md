@@ -1,6 +1,7 @@
 # Tietokantaohjelmointi yksilötyö
 
-Käyttää IMDB-datasettiä.
+Käyttää IMDB tietokantaa.
+Ohjeet tietokannan tekemiseen löytyy [täältä](https://github.com/dlwhittenbury/MySQL_IMDb_Project).
 
 ## Kuvia
 
